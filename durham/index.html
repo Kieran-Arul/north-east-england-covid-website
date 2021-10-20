@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- Chart JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+    <!-- My Own CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/aa03b46e77.js" crossorigin="anonymous"></script>
+
+    <title>County Durham</title>
+  </head>
+
+  <body>
+
+    <!-- NEW SECTION: TITLE SECTION-->
+    
+    <section class="coloured-section" id="title">
+
+        <div class="container-fluid">
+
+          <!-- Navbar -->
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            
+            <!-- Company Name on Navbar -->
+            <a class="navbar-brand" href="../homepage/index.html">PHS</a>
+    
+            <!-- Hamburger drop-down button when screen gets to small -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+            <!-- Navbar Items -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                <ul class="navbar-nav ms-auto">
+                  
+                    <li class="nav-item">
+                        <a class="nav-link" href="../homepage/index.html">Home</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="../government-advice/index.html">Guidelines</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="#footer">Contact</a>
+                    </li>
+        
+                </ul>
+    
+            </div>
+    
+          </nav>
+    
+          <!-- Title Text -->
+      
+          <div class="row">
+
+            <div class="col-lg-12">
+
+              <h1 class="big-heading">Latest Updates:</h1>
+              <h1 class="big-heading">County Durham</h1>
+              <h3 class="tier-status-header">Tier Status: National Lockdown</h3>
+
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-lg-12">
+
+              <!-- Select region dropdown button -->
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle btn-lg" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                Change Region
+                </button>
+
+                <!-- Select region dropdown menu after pressing button -->
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../durham/index.html">County Durham</a></li>
+                  <li><a class="dropdown-item" href="../darlington/index.html">Darlington</a></li>
+                  <li><a class="dropdown-item" href="../newcastle/index.html">Newcastle</a></li>
+                </ul>
+              </div>
+              
+            </div>
+
+          </div>
+
+        </div>
+    
+      </section>
+    
+    
+      <!-- NEW SECTION: DURHAM STATISTICS -->
+    
+      <section class="white-section" id="statistics">
+
+        <div class="container-fluid">
+
+          <h2 class="section-heading">Statistics</h2>
+
+          <!-- No. of Infected Chart -->
+          <div class="row">
+
+            <div class="col-lg-12">
+
+              <!-- Element that holds the trend in infected cases graph -->
+              <canvas id="infected-chart" width="10" height="5"></canvas>
+
+              <!-- Latest Infection Number. Dynamically Updated Using JS When New Figures Arrive -->
+              <p class="current-rate infected-num"></p>
+
+            </div>
+
+          </div>
+
+          <!-- No. of Dead Chart -->
+          <div class="row">
+
+            <div class="col-lg-12 bottom-graph-box">
+
+              <!-- Element that holds the trend in deaths graph -->
+              <canvas id="death-chart" width="10" height="5"></canvas>
+
+              <!-- Latest Death Number. Dynamically Updated Using JS When New Figures Arrive -->
+              <p class="current-rate death-num"></p>
+              
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-lg-12 risk-button-box">
+
+              <!-- Risk Calculator Button -->
+              <button type="button" class="btn-lg btn-danger risk-button"><h3 class="button-text">Calculate Risk Level</h3></button>
+
+              <!-- Loading Spinner -->
+              <div class="spinner-border hidden-element" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+
+              <!-- Risk Level Calculated Using JavaScript -->
+              <div class="risk-level hidden-element">
+                <i class="fas fa-biohazard fa-4x icon"></i>
+                <h3 class="small-heading risk-text"></h3>
+              </div>
+              
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <!-- What Does This Mean For Me Button -->
+            <div class="col-lg-12">
+              <a class="btn btn-primary button-text hidden-element question-btn" href="#guidelines" role="button">What Does This Mean For Me?</a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+    
+      <!-- NEW SECTION: HOSPITAL OCCUPANCY -->
+    
+      <section class="white-section" id="hospital-occupancy">
+
+        <hr>
+
+        <div class="container-fluid">
+
+          <h2 class="section-heading">Hospital Occupancy</h2>
+
+          <!-- Hospital Occupancy Graph -->
+          <div class="row">
+
+            <div class="col-lg-12">
+
+              <!-- Element that holds the hospital occupancy graph -->
+              <canvas id="hospital-chart" width="10" height="5"></canvas>
+
+              <!-- Latest Hospital Number. Dynamically Updated Using JS When New Figures Arrive -->
+              <p class="current-rate occupancy-num"></p>
+
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-lg-12 availability-button-box">
+
+              <!-- Hospital Availability Calculator Button -->
+              <button type="button" class="btn-lg btn-primary availability-button"><h3 class="button-text">Calculate Hospital Availability</h3></button>
+
+              <!-- Loading Spinner -->
+              <div class="spinner-border hidden-element" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+
+              <!-- Hospital Availability Calculated and Displayed Using JS -->
+              <div class="availability-level hidden-element">
+                <i class="fas fa-hospital-user fa-4x icon"></i>
+                <h3 class="small-heading availability-text"></h3>
+              </div>
+              
+            </div>
+
+          </div>
+
+        </div>
+    
+      </section>
+
+      <!-- NEW SECTION: Regional Cluster Map -->
+      <section class="white-section" id="regional-map">
+    
+        <hr>
+
+        <div class="container-fluid">
+
+          <h2 class="section-heading">Outbreak Cluster Map</h2>
+
+          <!-- Element that holds the Durham Choropleth Map -->
+          <div class="choropleth-map" id="durham-map"></div>
+      
+        </div>
+    
+      </section>
+    
+      <!-- NEW SECTION: GOVERNMENT GUIDELINES -->
+    
+      <section class="white-section" id="guidelines">
+    
+        <hr>
+
+        <div class="container-fluid">
+
+          <h2 class="section-heading">Government Guidelines</h2>
+
+          <!-- Guidelines Covered - Row 1 -->
+          <div class="row">
+
+            <div class="col-lg-4 guideline-box">
+              <i class="fas fa-laptop-code fa-4x icon"></i>
+              <h3 class="small-heading"><a class="guideline-link" href="../government-advice/index.html#work">Work</a></h3>
+            </div>
+
+            <div class="col-lg-4 guideline-box">
+              <i class="fas fa-dumbbell fa-4x icon"></i>
+              <h3 class="small-heading"><a class="guideline-link" href="../government-advice/index.html#exercise">Exercise</a></h3>
+            </div>
+
+            <div class="col-lg-4 guideline-box">
+              <i class="fas fa-glass-cheers fa-4x icon"></i>
+              <h3 class="small-heading"><a class="guideline-link" href="../government-advice/index.html#shops-and-dining">Shops and Dining</a></h3>
+            </div>
+
+          </div>
+
+          <!-- Guidelines Covered - Row 2 -->
+          <div class="row">
+                
+            <div class="col-lg-4 guideline-box">
+              <i class="fas fa-users fa-4x icon"></i>
+              <h3 class="small-heading"><a class="guideline-link" href="../government-advice/index.html#socialising">Socialising</a></h3>
+            </div>
+
+            <div class="col-lg-4 guideline-box">
+              <i class="fas fa-bus-alt fa-4x icon"></i>
+              <h3 class="small-heading"><a class="guideline-link" href="../government-advice/index.html#transport">Transport</a></h3>
+            </div>
+
+            <div class="col-lg-4 guideline-box">
+              <i class="fas fa-question fa-4x icon"></i>
+              <h3 class="small-heading"><a class="guideline-link" href="../government-advice/index.html#faqs">FAQs</a></h3>
+            </div>
+
+          </div>
+
+        </div>
+    
+      </section>
+    
+      <!-- FINAL SECTION: FOOTER -->
+    
+      <footer class="coloured-section" id="footer">
+
+        <div class="container-fluid">
+            
+            <!-- Social Icons in Footer -->
+            <i class="fab fa-facebook-f social-icon"></i>
+            <i class="fab fa-twitter social-icon"></i>
+            <i class="fab fa-instagram social-icon"></i>
+            <i class="fas fa-envelope social-icon"></i>
+            <p>© Copyright 2021 PHS</p>
+
+        </div>
+    
+      </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="index.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,147 @@
+/********************************** Tag Selectors **********************************/
+
+body {
+    font-family: "Montserrat, sans-serif";
+    text-align: center;
+}
+
+p {
+    color: #8F8F8F;
+}
+
+hr {
+    border-top: dotted 10px;
+    border-width: 5%;
+    background-color: #FFF;
+    margin: auto auto 5%;
+    width: 20%;
+}
+
+/********************************** Sections **********************************/
+
+.coloured-section {
+    background-color: #66BFBF;
+    color: #FFF;
+}
+
+.white-section {
+    background-color: #FFF;
+}
+
+/********************************** Container Selectors **********************************/
+
+.container-fluid {
+    
+    padding: 7% 15%;
+}
+
+#title .container-fluid {
+
+    padding: 2% 15% 9%;
+
+}
+
+/********************************** Heading Selectors **********************************/
+
+.big-heading {
+
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1.5;
+}
+
+.section-heading {
+    
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.5;
+    margin-bottom: 5%;
+}
+
+.tier-status-header {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-top: 5%;
+}
+
+/********************************** Navigation Bar **********************************/
+
+.navbar {
+    padding-bottom: 4.5rem;
+}
+
+.navbar-brand {
+    font-family: "Ubuntu, sans-serif";
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+/********************************** Drop-down Menu **********************************/
+
+.dropdown-toggle {
+    background-color: #343A40;
+    border-color: #fff;
+    border-style: solid;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 100%;
+    margin-top: 15%;
+    font-size: 2rem;
+    font-weight: 900;
+  }
+
+  .dropdown-menu{
+    background-color: #FFF;
+    width: 100%;
+    text-align: center;
+  }
+
+.dropdown-item {
+    font-size: 1rem;
+}
+
+/********************************** Rule Box **********************************/
+
+.rule-box {
+    padding: 4.5%;
+}
+
+.rule-title {
+    
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+/********************************** Font Awesome Icons **********************************/
+
+.icon {
+    color: #66BFBF;
+    margin-bottom: 1rem;
+}
+
+.icon:hover {
+    color: #EF1864;
+}
+
+/********************************** Footer Section **********************************/
+
+.social-icon {
+    margin: 20px 10px;
+}
+
+/************* Behavioural Classes *************/
+
+.hidden-element {
+    display: none;
+}

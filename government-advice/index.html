@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- My Own CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/aa03b46e77.js" crossorigin="anonymous"></script>
+
+    <title>NE: Government Advice</title>
+  </head>
+
+  <body>
+
+    <!-- NEW SECTION: TITLE SECTION -->
+    
+    <section class="coloured-section" id="title">
+
+        <div class="container-fluid">
+
+          <!-- Navbar -->
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            
+            <!-- Company Name on Navbar -->
+            <a class="navbar-brand" href="../homepage/index.html">PHS</a>
+    
+            <!-- Hamburger drop-down button when screen gets to small -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+            <!-- Navbar Items -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                <ul class="navbar-nav ms-auto">
+                  
+                    <li class="nav-item">
+                        <a class="nav-link" href="../homepage/index.html">Home</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Guidelines</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="#footer">Contact</a>
+                    </li>
+        
+                </ul>
+    
+            </div>
+    
+          </nav>
+    
+          <!-- Title Text -->
+      
+          <div class="row">
+
+            <div class="col-lg-12">
+
+              <h1 class="big-heading">Government Guidelines</h1>
+
+              <!-- Changed using JS depending on what tier the user selects -->
+              <h3 class="tier-status-header">Tier Status: National Lockdown</h3>
+
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <!-- Tier Select Dropdown Menu - Allows the user to select what tier they are in -->
+            <div class="col-lg-6">
+
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                Select Tier Status
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item tier-status-option" href="">Tier 1</a></li>
+                  <li><a class="dropdown-item tier-status-option" href="">Tier 2</a></li>
+                  <li><a class="dropdown-item tier-status-option" href="">Tier 3</a></li>
+                  <li><a class="dropdown-item tier-status-option" href="">National Lockdown</a></li>
+                </ul>
+              </div>
+
+            </div>
+
+            <!-- Category Select Dropdown Menu - Allows quickly jumping to different categories -->
+            <div class="col-lg-6">
+
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                Select Category
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#work">Work</a></li>
+                  <li><a class="dropdown-item" href="#exercise">Exercise</a></li>
+                  <li><a class="dropdown-item" href="#socialising">Socialising</a></li>
+                  <li><a class="dropdown-item" href="#shops-and-dining">Shops & Dining</a></li>
+                  <li><a class="dropdown-item" href="#transport">Transport</a></li>
+                  <li><a class="dropdown-item" href="#faqs">FAQs</a></li>
+                </ul>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+    
+      </section>
+    
+    
+      <!-- NEW SECTION: WORK RULES -->
+    
+      <section class="white-section" id="work">
+
+        <div class="container-fluid">
+
+          <h2 class="section-heading">Work</h2>
+
+            <!-- National Lockdown Work Rules -->
+            <div class="row">
+                
+                <div class="col-lg-4 rule-box national-lockdown">
+                  <i class="fas fa-briefcase fa-4x icon"></i>
+                    <h3 class="rule-title">Work From Home</h3>
+                    <p>
+                      Unless you are a key worker.
+                      <br>
+                      <a href="https://www.gov.uk/government/publications/coronavirus-covid-19-maintaining-educational-provision/guidance-for-schools-colleges-and-local-authorities-on-maintaining-educational-provision#critical-workers" style="text-decoration: none;">Find out if you are a key worker</a>
+                    </p>
+                </div>
+
+                <div class="col-lg-4 rule-box national-lockdown">
+                  <i class="fas fa-taxi fa-4x icon"></i>
+                    <h3 class="rule-title">Avoid Crowds</h3>
+                    <p>If you are a key worker, plan your journey to avoid crowds.</p>
+                </div>
+
+                <div class="col-lg-4 rule-box national-lockdown">
+                  <i class="fas fa-hands-helping fa-4x icon"></i>
+                    <h3 class="rule-title">Get Financial Support</h3>
+                    <p>
+                      This applies if you have lost your job due to the epidemic.
+                      <br>
+                      <a href="https://www.gov.uk/guidance/coronavirus-covid-19-what-to-do-if-you-were-employed-and-have-lost-your-job#financial-support" style="text-decoration: none;">More information</a>
+                    </p>
+                </div>
+
+                <!-- Tier 3 Work Rules -->
+                <div class="col-lg-4 rule-box tier-3 hidden-element">
+                  <i class="fas fa-briefcase fa-4x icon"></i>
+                    <h3 class="rule-title">Work From Home Where Possible</h3>
+                    <p>
+                      Unless you are a key worker or your job's nature makes it difficult.
+                      <br>
+                      <a href="https://www.gov.uk/government/publications/coronavirus-covid-19-maintaining-educational-provision/guidance-for-schools-colleges-and-local-authorities-on-maintaining-educational-provision#critical-workers" style="text-decoration: none;">Find out if you are a key worker</a>
+                    </p>
+                </div>
+
+                <div class="col-lg-4 rule-box tier-3 hidden-element">
+                  <i class="fas fa-taxi fa-4x icon"></i>
+                    <h3 class="rule-title">Avoid Crowds</h3>
+                    <p>If you are a key worker, plan your journey to avoid crowds.</p>
+                </div>
+
+                <div class="col-lg-4 rule-box tier-3 hidden-element">
+                  <i class="fas fa-hands-helping fa-4x icon"></i>
+                    <h3 class="rule-title">Get Financial Support</h3>
+                    <p>
+                      This applies if you have lost your job due to the epidemic.
+                      <br>
+                      <a href="https://www.gov.uk/guidance/coronavirus-covid-19-what-to-do-if-you-were-employed-and-have-lost-your-job#financial-support" style="text-decoration: none;">More information</a>
+                    </p>
+                </div>
+
+                <!-- Tier 2 Work Rules -->
+                <div class="col-lg-4 rule-box tier-2 hidden-element">
+                  <i class="fas fa-briefcase fa-4x icon"></i>
+                    <h3 class="rule-title">Work From Home Where Possible</h3>
+                    <p>
+                      Unless you are a key worker or your job's nature makes it difficult.
+                      <br>
+                      <a href="https://www.gov.uk/government/publications/coronavirus-covid-19-maintaining-educational-provision/guidance-for-schools-colleges-and-local-authorities-on-maintaining-educational-provision#critical-workers" style="text-decoration: none;">Find out if you are a key worker</a>
+                    </p>
+                </div>
+
+                <div class="col-lg-4 rule-box tier-2 hidden-element">
+                  <i class="fas fa-taxi fa-4x icon"></i>
+                    <h3 class="rule-title">Avoid Crowds</h3>
+                    <p>If you are a key worker, plan your journey to avoid crowds.</p>
+                </div>
+
+                <div class="col-lg-4 rule-box tier-2 hidden-element">
+                  <i class="fas fa-hands-helping fa-4x icon"></i>
+                    <h3 class="rule-title">Get Financial Support</h3>
+                    <p>
+                      This applies if you have lost your job due to the epidemic.
+                      <br>
+                      <a href="https://www.gov.uk/guidance/coronavirus-covid-19-what-to-do-if-you-were-employed-and-have-lost-your-job#financial-support" style="text-decoration: none;">More information</a>
+                    </p>
+                </div>
+
+                <!-- Tier 1 Work Rules -->
+                <div class="col-lg-4 rule-box tier-1 hidden-element">
+                  <i class="fas fa-briefcase fa-4x icon"></i>
+                    <h3 class="rule-title">Work From Home Where Possible</h3>
+                    <p>
+                      Unless you are a key worker or your job's nature makes it difficult.
+                      <br>
+                      <a href="https://www.gov.uk/government/publications/coronavirus-covid-19-maintaining-educational-provision/guidance-for-schools-colleges-and-local-authorities-on-maintaining-educational-provision#critical-workers" style="text-decoration: none;">Find out if you are a key worker</a>
+                    </p>
+                </div>
+
+                <div class="col-lg-4 rule-box tier-1 hidden-element">
+                  <i class="fas fa-taxi fa-4x icon"></i>
+                    <h3 class="rule-title">No Travel Restrictions</h3>
+                    <p>Ensure a face mask is worn during travel. Avoid travelling to higher tier areas.</p>
+                </div>
+
+                <div class="col-lg-4 rule-box tier-1 hidden-element">
+                  <i class="fas fa-hands-helping fa-4x icon"></i>
+                    <h3 class="rule-title">Get Financial Support</h3>
+                    <p>
+                      This applies if you have lost your job due to the epidemic.
+                      <br>
+                      <a href="https://www.gov.uk/guidance/coronavirus-covid-19-what-to-do-if-you-were-employed-and-have-lost-your-job#financial-support" style="text-decoration: none;">More information</a>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+      </section>
+    
+    
+      <!-- NEW SECTION: EXERCISE RULES -->
+    
+      <section class="white-section" id="exercise">
+
+        <hr>
+
+        <div class="container-fluid">
+
+          <h2 class="section-heading">Exercise</h2>
+
+            <div class="row">
+                
+                <!-- National Lockdown Exercise Rules -->
+                <div class="col-lg-4 rule-box national-lockdown">
+                  <i class="far fa-times-circle fa-4x icon"></i>
+                    <h3 class="rule-title">Closure of Sports and Leisure Facilities</h3>
+                    <p>This includes both indoor and outdoor facilities.</p>
+                </div>
+
+                <div class="col-lg-4 rule-box national-lockdown">
+                  <i class="fas fa-lock-open fa-4x icon"></i>
+                    <h3 class="rule-title">Playgrounds and Parks to Remain Open</h3>
+                    <p>These places can still be used while exercising.</p>
+                </div>
+
+                <div class="col-lg-4 rule-box national-lockdown">
+                  <i class="fas fa-running fa-4x icon"></i>
+                    <h3 class="rule-title">Outdoor exercise limited to once a day</h3>
+                    <p>This may include (but is not limited to) activities such as running or cycling.</p>
+                </div>
+
+                <!-- Tier 3 Exercise Rules -->
+                <div class="col-lg-4 rule-box tier-3 hidden-element">
+                  <i class="far fa-times-circle fa-4x icon"></i>
+                    <h3 class="rule-title">Closure of Indoor Sports and Leisure Facilities</h3>
+                    <p>Outdoor facilities to remain open only for organised and licensed activites.</p>
+                </div>
+  
+                  <div class="col-lg-4 rule-box tier-3 hidden-element">
+                    <i class="fas fa-lock-open fa-4x icon"></i>
+                      <h3 class="rule-title">Playgrounds and Parks to Remain Open</h3>
+                      <p>These places can be used for exercise though social distancing must be observed.</p>
+                  </div>
+  
+                  <div class="col-lg-4 rule-box tier-3 hidden-element">
+                    <i class="fas fa-running fa-4x icon"></i>
+                      <h3 class="rule-title">Outdoor Exercise Must Be Done Alone</h3>
+                      <p>This may include (but is not limited to) activities such as running or cycling, though you must be alone.</p>
+                  </div>
+
+                  <!-- Tier 2 Exercise Rules -->            
+                  <div class="col-lg-4 rule-box tier-2 hidden-element">
+                    <i class="far fa-times-circle fa-4x icon"></i>
+                      <h3 class="rule-title">Gyms, Pools and Sports Facilities Can Open</h3>
+                      <p>This includes all indoor and outdoor facilities though participation is limited to your household.</p>
+                  </div>
+  
+                  <div class="col-lg-4 rule-box tier-2 hidden-element">
+                    <i class="far fa-futbol fa-4x icon"></i>
+                      <h3 class="rule-title">Limited Attendance of Sporting Events</h3>
+                      <p>Capacity is 2000 outdoors or 1000 indoors. Social Distancing must be observed.</p>
+                  </div>
+  
+                  <div class="col-lg-4 rule-box tier-2 hidden-element">
+                    <i class="fas fa-running fa-4x icon"></i>
+                      <h3 class="rule-title">No Restrictions on Outdoor Exercise</h3>
+                      <p>This may include (but is not limited to) activities such as running or cycling.</p>
+                  </div>
+
+                  <!-- Tier 1 Exercise Rules -->            
+                  <div class="col-lg-4 rule-box tier-1 hidden-element">
+                    <i class="far fa-times-circle fa-4x icon"></i>
+                      <h3 class="rule-title">Gyms, Pools and Sports Facilities Can Open</h3>
+                      <p>This includes all indoor and outdoor facilities though participation in indoor activities is limited to 6 people.</p>
+                  </div>
+  
+                  <div class="col-lg-4 rule-box tier-1 hidden-element">
+                    <i class="far fa-futbol fa-4x icon"></i>
+                      <h3 class="rule-title">Limited Attendance of Sporting Events</h3>
+                      <p>Capacity is 4000 outdoors or 1000 indoors. Social Distancing must be observed.</p>
+                  </div>
+  
+                  <div class="col-lg-4 rule-box tier-1 hidden-element">
+                    <i class="fas fa-running fa-4x icon"></i>
+                      <h3 class="rule-title">No Restrictions on Outdoor Exercise</h3>
+                      <p>This may include (but is not limited to) activities such as running or cycling.</p>
+                  </div>
+
+            </div>
+
+        </div>
+    
+      </section>
+    
+      <!-- NEW SECTION: SOCIALISING RULES -->
+    
+      <section class="white-section" id="socialising">
+
+        <hr>
+
+        <div class="container-fluid">
+
+          <h2 class="section-heading">Socialising</h2>
+
+            <div class="row">
+                
+                <!-- National Lockdown Socialising Rules -->
+                <div class="col-lg-4 rule-box national-lockdown">
+                  <i class="fas fa-ban fa-4x icon"></i>
+                    <h3 class="rule-title">No Socialising With Anyone Outside Your Household</h3>
+                    <p>Socialising should only take place inside your house and only involve people from your household.</p>
+                </div>
+
+                <div class="col-lg-4 rule-box national-lockdown">
+                  <i class="fas fa-people-arrows fa-4x icon"></i>
+                    <h3 class="rule-title">You Can Only Be Outdoors With 1 Person From Your Household</h3>
+                    <p>Carers and children under 5 years of age do not count towards this limit.</p>
+                </div>
+
+                <div class="col-lg-4 rule-box national-lockdown">
+                  <i class="fas fa-head-side-mask fa-4x icon"></i>
+                    <h3 class="rule-title">Wear Masks, Maintain Social Distancing With Those From Different Households</h3>
+                    <p>Maintain a distance of at least 2m from others and wear a mask while not at home.</p>
+                </div>
+
+                <!-- Tier 3 Socialising Rules -->
+                <div class="col-lg-4 rule-box tier-3 hidden-element">
+                  <i class="fas fa-ban fa-4x icon"></i>
+                    <h3 class="rule-title">Do Not Invite People From Outside Your Household to Your Home</h3>
+                    <p>Socialising in your home can only take place between people in a common household.</p>
+                </div>
+
+                <div class="col-lg-4 rule-box tier-3 hidden-element">
+                  <i class="fas fa-people-arrows fa-4x icon"></i>
+                    <h3 class="rule-title">Outdoor Meeting is Limited</h3>
+                    <p>Outdoor meeting must be in a public space, with people of the same household and in groups of 6 or less.</p>
+                </div>
+
+                <div class="col-lg-4 rule-box tier-3 hidden-element">
+                  <i class="fas fa-head-side-mask fa-4x icon"></i>
+                    <h3 class="rule-title">Wear Masks, Maintain Social Distancing With Those From Different Households</h3>
+                    <p>Maintain a distance of at least 2m from others and wear a mask while not at home.</p>
+                </div>
+
+                  <!-- Tier 2 Socialising Rules -->            
+                  <div class="col-lg-4 rule-box tier-2 hidden-element">
+                    <i class="fas fa-ban fa-4x icon"></i>
+                    <h3 class="rule-title">Do Not Invite People From Outside Your Household to Your Home</h3>
+                    <p>Socialising in your home can only take place between people in a common household.</p>
+                  </div>
+  
+                  <div class="col-lg-4 rule-box tier-2 hidden-element">
+                    <i class="fas fa-people-arrows fa-4x icon"></i>
+                      <h3 class="rule-title">Outdoor Household Mixing is Limited</h3>
+                      <p>Meeting must be in groups of 6 or less.</p>
+                  </div>
+  
+                  <div class="col-lg-4 rule-box tier-2 hidden-element">
+                    <i class="fas fa-head-side-mask fa-4x icon"></i>
+                      <h3 class="rule-title">Wear Masks and Maintain Social Distancing</h3>
+                      <p>Maintain a distance of at least 2m from others and wear a mask while not at home.</p>
+                  </div>
+
+                  <!-- Tier 1 Socialising Rules -->            
+                  <div class="col-lg-4 rule-box tier-1 hidden-element">
+                    <i class="fas fa-exclamation-triangle fa-4x icon"></i>
+                    <h3 class="rule-title">Indoor and Outdoor Socialising is Limited</h3>
+                    <p>You can socialise with people both inside and outside your household but it must be done in groups of 6 or less.</p>
+                  </div>
+  
+                  <div class="col-lg-4 rule-box tier-1 hidden-element">
+                    <i class="fas fa-people-arrows fa-4x icon"></i>
+                      <h3 class="rule-title">Outdoor Household Mixing is Limited</h3>
+                      <p>Meeting must be in groups of 6 or less.</p>
+                  </div>
+  
+                  <div class="col-lg-4 rule-box tier-1 hidden-element">
+                    <i class="fas fa-head-side-mask fa-4x icon"></i>
+                      <h3 class="rule-title">Wear Masks and Maintain Social Distancing</h3>
+                      <p>Maintain a distance of at least 2m from others and wear a mask while not at home.</p>
+                  </div>
+
+            </div>
+
+        </div>
+    
+      </section>
+    
+    
+      <!-- NEW SECTION: SHOPS AND DINING FACILITY RULES -->
+    
+      <section class="white-section" id="shops-and-dining">
+    
+        <hr>
+
+        <div class="container-fluid">
+
+          <h2 class="section-heading">Shops and Dining</h2>
+
+            <div class="row">
+                
+                <!-- National Lockdown Shop/Dining Rules -->
+                <div class="col-lg-4 rule-box national-lockdown">
+                  <i class="fas fa-hamburger fa-4x icon"></i>
+                    <h3 class="rule-title">Restaurants, Cafes and Pubs To Close</h3>
+                    <p>However, drive-through, delivery and takeaway will remain available.</p>
+                </div>
+
+                <div class="col-lg-4 rule-box national-lockdown">
+                  <i class="fas fa-shopping-cart fa-4x icon"></i>
+                    <h3 class="rule-title">Non-essential Shops To Close</h3>
+                    <p>Essential shops such as supermarkets and pharmacies will remain open.</p>
+                </div>
+
+                <div class="col-lg-4 rule-box national-lockdown">
+                  <i class="fas fa-cut fa-4x icon"></i>
+                    <h3 class="rule-title">Hair and Nail Salons To Close</h3>
+                    <p>These services also cannot be provided privately at your home.</p>
+                </div>
+
+                <!-- Tier 3 Shop/Dining Rules -->
+                <div class="col-lg-4 rule-box tier-3 hidden-element">
+                  <i class="fas fa-hamburger fa-4x icon"></i>
+                    <h3 class="rule-title">Restaurants, Cafes and Pubs To Close</h3>
+                    <p>However, drive-through, delivery and takeaway will remain available.</p>
+                </div>
+
+                <div class="col-lg-4 rule-box tier-3 hidden-element">
+                  <i class="fas fa-shopping-cart fa-4x icon"></i>
+                    <h3 class="rule-title">Shops Can Remain Open</h3>
+                    <p>This includes both essential and non-essential shops.</p>
+                </div>
+
+                <div class="col-lg-4 rule-box tier-3 hidden-element">
+                  <i class="fas fa-cut fa-4x icon"></i>
+                    <h3 class="rule-title">Hair and Nail Salons Can Remain Open</h3>
+                    <p>However, masks must be worn throughout.</p>
+                </div>
+
+                  <!-- Tier 2 Shop/Dining Rules -->            
+                  <div class="col-lg-4 rule-box tier-2 hidden-element">
+                    <i class="fas fa-hamburger fa-4x icon"></i>
+                      <h3 class="rule-title">Restaurants, Cafes and Pubs Can Remain Open</h3>
+                      <p>However, they must close by 11pm and alcohol must be accompanied by a substantial meal.</p>
+                  </div>
+  
+                  <div class="col-lg-4 rule-box tier-2 hidden-element">
+                    <i class="fas fa-shopping-cart fa-4x icon"></i>
+                      <h3 class="rule-title">Shops Can Remain Open</h3>
+                      <p>This includes both essential and non-essential shops.</p>
+                  </div>
+  
+                  <div class="col-lg-4 rule-box tier-2 hidden-element">
+                    <i class="fas fa-cut fa-4x icon"></i>
+                      <h3 class="rule-title">Hair and Nail Salons Can Remain Open</h3>
+                      <p>However, masks must be worn throughout.</p>
+                  </div>
+
+                  <!-- Tier 1 Shop/Dining Rules -->            
+                  <div class="col-lg-4 rule-box tier-1 hidden-element">
+                    <i class="fas fa-hamburger fa-4x icon"></i>
+                      <h3 class="rule-title">Restaurants, Cafes and Pubs Can Remain Open</h3>
+                      <p>However, they must close by 11pm.</p>
+                  </div>
+  
+                  <div class="col-lg-4 rule-box tier-1 hidden-element">
+                    <i class="fas fa-shopping-cart fa-4x icon"></i>
+                      <h3 class="rule-title">Shops Can Remain Open</h3>
+                      <p>This includes both essential and non-essential shops.</p>
+                  </div>
+  
+                  <div class="col-lg-4 rule-box tier-1 hidden-element">
+                    <i class="fas fa-cut fa-4x icon"></i>
+                      <h3 class="rule-title">Hair and Nail Salons Can Remain Open</h3>
+                      <p>However, masks must be worn throughout.</p>
+                  </div>
+
+            </div>
+
+        </div>
+    
+      </section>
+    
+    
+      <!-- NEW SECTION: TRANSPORT RULES -->
+    
+      <section class="white-section" id="transport">
+
+        <hr>
+
+        <div class="container-fluid">
+
+          <h2 class="section-heading">Transport</h2>
+
+            <div class="row">
+                
+                <!-- National Lockdown Transport Rules -->
+                <div class="col-lg-4 rule-box national-lockdown">
+                  <i class="fas fa-subway fa-4x icon"></i>
+                    <h3 class="rule-title">Public Transport Will Continue</h3>
+                    <p>However, services may be reduced or delayed due to social distancing. Face masks must be worn at all times.</p>
+                </div>
+
+                <div class="col-lg-4 rule-box national-lockdown">
+                  <i class="fas fa-shopping-basket fa-4x icon"></i>
+                    <h3 class="rule-title">Travel Only For Essential Reasons</h3>
+                    <p>Such reasons may include grocery shopping or collection of medicine.</p>
+                </div>
+
+                <div class="col-lg-4 rule-box national-lockdown">
+                  <i class="fas fa-plane fa-4x icon"></i>
+                    <h3 class="rule-title">Travelling Out of your Area is Forbidden</h3>
+                    <p>The only exceptions are education, work and caring for elderly family members.</p>
+                </div>
+
+                <!-- Tier 3 Transport Rules -->
+                <div class="col-lg-4 rule-box tier-3 hidden-element">
+                  <i class="fas fa-subway fa-4x icon"></i>
+                    <h3 class="rule-title">Public Transport Will Continue</h3>
+                    <p>However, services may be reduced or delayed due to social distancing. Face masks must be worn at all times.</p>
+                </div>
+
+                <div class="col-lg-4 rule-box tier-3 hidden-element">
+                  <i class="fas fa-shopping-basket fa-4x icon"></i>
+                    <h3 class="rule-title">Travel Should Be Minimised</h3>
+                    <p>Travel to open amenities are permitted.</p>
+                </div>
+
+                <div class="col-lg-4 rule-box tier-3 hidden-element">
+                  <i class="fas fa-plane fa-4x icon"></i>
+                    <h3 class="rule-title">Travelling Out of your Area is Forbidden</h3>
+                    <p>The only exceptions are education, work and caring for elderly family members.</p>
+                </div>
+
+                  <!-- Tier 2 Transport Rules -->            
+                  <div class="col-lg-4 rule-box tier-2 hidden-element">
+                    <i class="fas fa-subway fa-4x icon"></i>
+                      <h3 class="rule-title">Public Transport Will Continue</h3>
+                      <p>However, services may be reduced or delayed due to social distancing. Face masks must be worn at all times.</p>
+                  </div>
+  
+                  <div class="col-lg-4 rule-box tier-2 hidden-element">
+                    <i class="fas fa-shopping-basket fa-4x icon"></i>
+                      <h3 class="rule-title">Travel Should Be Minimised</h3>
+                      <p>Travel to open amenities are permitted.</p>
+                  </div>
+  
+                  <div class="col-lg-4 rule-box tier-2 hidden-element">
+                    <i class="fas fa-plane fa-4x icon"></i>
+                      <h3 class="rule-title">Travelling Out of your Area is Discouraged</h3>
+                      <p>Possible exceptions include work and caring for elderly family members.</p>
+                  </div>
+
+                  <!-- Tier 1 Transport Rules -->            
+                  <div class="col-lg-4 rule-box tier-1 hidden-element">
+                    <i class="fas fa-subway fa-4x icon"></i>
+                      <h3 class="rule-title">Public Transport Will Continue</h3>
+                      <p>However, services may be reduced or delayed due to social distancing. Face masks must be worn at all times.</p>
+                  </div>
+  
+                  <div class="col-lg-4 rule-box tier-1 hidden-element">
+                    <i class="fas fa-shopping-basket fa-4x icon"></i>
+                      <h3 class="rule-title">No Restrictions On Travel</h3>
+                      <p>However, face masks should be worn at all times.</p>
+                  </div>
+  
+                  <div class="col-lg-4 rule-box tier-1 hidden-element">
+                    <i class="fas fa-plane fa-4x icon"></i>
+                      <h3 class="rule-title">Travelling Out of your Area is Discouraged</h3>
+                      <p>Possible exceptions include work and caring for elderly family members.</p>
+                  </div>
+
+            </div>
+
+        </div>
+    
+      </section>
+
+      <!-- NEW SECTION: CORONAVIRUS FAQs -->
+      <section class="white-section" id="faqs">
+
+        <hr>
+
+        <div class="container-fluid">
+
+          <h2 class="section-heading">Covid-19: Common Questions</h2>
+
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/QV_UnPl8qMA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+    
+      </section>
+    
+      <!-- FINAL SECTION: FOOTER -->
+    
+      <footer class="coloured-section" id="footer">
+
+        <div class="container-fluid">
+        
+            <i class="fab fa-facebook-f social-icon"></i>
+            <i class="fab fa-twitter social-icon"></i>
+            <i class="fab fa-instagram social-icon"></i>
+            <i class="fas fa-envelope social-icon"></i>
+            <p>© Copyright 2021 PHS</p>
+
+        </div>
+    
+      </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="index.js"></script>
+
+  </body>
+
+</html>
