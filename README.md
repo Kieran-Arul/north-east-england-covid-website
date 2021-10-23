@@ -29,4 +29,4 @@
 
   http://localhost:8000/
   
-5\. Click on the homepage directory. This should take you to the homepage of the website, which you can now explore.
+5\. Click on the homepage directory. You should now be able to explore the website.
