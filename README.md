@@ -9,7 +9,7 @@
   - Based on the above statistics, the website labels each area either high/medium/low risk.
   - Allows users to filter government advice/guidelines based on tier level.
   - Presents an interactive, colour-coded choropleth map for each region, indicating the severity of the outbreak there.
-  - Displays the availability of hospitals as a percentage of how many beds are occupied with Covid-19 patients.
+  - Displays the availability of hospitals in terms of what percentage of hospital beds are occupied.
 
 ## How to Use
 
